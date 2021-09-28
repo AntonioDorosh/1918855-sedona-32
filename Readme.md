@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Anton Doroshenko](https://up.htmlacademy.ru/htmlcss/32/user/1918855).
-* Наставник: [Вадим Канинский](https://vadimcpp.ru/).
+* Наставник: [Вадим Канинский](https://vadimcpp.ru/)
 
 ---
 
