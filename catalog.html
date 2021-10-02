@@ -15,10 +15,8 @@
             <li class="menu__item"><a href="#" class="menu__link">О Седоне</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Гостиницы</a></li>
         </ul>
-    
         <a href="#" class="logo">
             <img src="./img/logo.png" alt="" class="header__img">
-    
         </a>
         <ul class="navigation-list navigation-user">
             
@@ -27,78 +25,78 @@
                     <span class="visually-hidden">Поиск</span>
                 </a>
             </li>
-            
             <li class="navigation-item">
                 <a class="navigation-link" href="">
                     <span class="visually-hidden">Корзина</span>
                 </a>
             </li>
-            
             <li class="navigation-item">
                 <a class="navigation-link" href="">Хочу Сюда!</a>
             </li>
         </ul>
     </nav>
 
-<section class="filter-form">
+<section class="filters"> 
+    <h1 class="filters__title">Гостиницы Седоны</h1>
+    <a href="#"></a>
+    <a href="#"></a>
+    <p class="filters__subtitle">Гостиницы</p>
     
-    <h1 class="filter__title">Гостиницы Седоны</h1>
-    <img src="#" alt="">
-    <p class="filter__subtitle">Гостиницы</p>
-    
+    <div class="filters-form">
+        <span class="filters__type visually-hidden">Инфраструктура:</span>
+        <ul class="catalog-filters__form">
+            <li class="catalog-filters__list">
+            <input type="checkbox" name="" id="" checked>
+            <label for="">Бассейн</label>
+            </li>
+            <li class="catalog-filters__list">
+                <input type="checkbox" name="" id="" checked>
+                <label for="">Парковка</label>
+            </li>
+            <li class="catalog-filters__list">
+                <input type="checkbox" name="" id="">
+                <label for="">Wi-Fi</label>
+            </li>
+        </ul>
+    </div>
 
+    <div class="filters-form">
+        <span class="filters__type visually-hidden">
+            Тип жилья:
+        </span>
+        <ul class="filters-form__list">
+            <li class="filters-form__menu">
+                <input type="radio" name="" id="" checked>
+                <label for="">Гостиница</label>
+            </li>
+            <li class="filters-form__menu">
+                <input type="radio" name="" id="">
+                <label for="">Мотель</label>
+            </li>
+            <li class="filters-form__menu">
+                <input type="radio" name="" id="">
+                <label for="">Апартаменты</label>
+            </li>
+        </ul>
+    </div>
 
-    <form action="#" method="GET">
-        <fieldset class="filter-form__base">
-            <legend>Инфраструктура:</legend>
-
-            <input type="checkbox">
-            <label>Бассейн</label>
-
-            <input type="checkbox">
-            <label>Парковка</label>
-
-            <input type="checkbox">
-            <label>Wi-Fi</label>
-
-        </fieldset>
-
-        <fieldset class="filter-form__type">
-            <legend>Тип жилья:</legend>
-
-            <input type="radio">
-            <label>Гостиница</label>
-
-            <input type="radio">
-            <label>Мотель</label>
-
-            <input type="radio">
-            <label>Апартаменты</label>
-
-        </fieldset>
-
-        <fieldset class="filter-form__price">
-            <legend>Стоимость, ₽:</legend>
-            <div class="range">
-                <div class="range__fields">
-                    <div class="range__field">
-                        <label for="range1">0</label>
-                            <input type="text" id="range1" placeholder="от">
-                    </div>
-                    <div class="range__field">
-                        <label for="range2">9000</label>
-                            <input type="text" id="range2" placeholder="до">
-                            <input type="range" id="price" name="price" min="0" max="20000">
-                        <label for="price">
-                            <span class="visually-hidden">Сортировка цены:</span>
-                        </label>
-                    </div>
-                </div>
+    <div class="range">
+        <span class="range__cost visually-hidden">Стоимость, ₽:</span>
+        <div class="range__fields">
+            <div class="range__field">
+                <label for="range1">0</label>
+                    <input type="text" id="range1" placeholder="от">
             </div>
-        </fieldset>
-    </form>
-    <button class="btn__accept">Применить</button>
-    <button class="btn__reset">Сбросить</button>
+            <div class="range__field">
+                <label for="range2">9000</label>
+                    <input type="text" id="range2" placeholder="до">
+                    <input type="range" id="price" name="price" min="0" max="20000">
+                <label for="price">
+                    <span class="visually-hidden">Сортировка цены:</span>
+                </label>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -183,7 +181,6 @@
 
 </div>
 <a href="#" class="more-info__btn">Загрузить еще</a>
-
 <ul class="pagination">
     <li class="pagination-item">
         <a href="#" class="pagination-link pagination__current">1</a>
@@ -191,19 +188,15 @@
     <li class="pagination-item">
         <a href="#" class="pagination-link pagination__current">2</a>
     </li>
-
     <li class="pagination-item">
         <a href="#" class="pagination-link pagination__current">3</a>
     </li>
-
     <li class="pagination-item">
         <a href="#" class="pagination-link pagination__current">4</a>
     </li>
-
     <li class="pagination-item">
         <a href="#" class="pagination-link pagination__current">...</a>
     </li>
-
     <li class="pagination-item">
         <a href="#" class="pagination-link pagination__current">10</a>
     </li>
