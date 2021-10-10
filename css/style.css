@@ -46,11 +46,21 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;;
+}
+.menu__list {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
 }
 .bg-container {
     background-image: url(../img/bg.jpg);
@@ -58,7 +68,82 @@ body {
     background-size: 100% auto;
     background-position: center;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.info {
+    text-align: center;
+}
+.title__info {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.subtitle__info {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.advantages__info {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.advantages__subtext{
+    color: #fff;
+}
+.advantages__item {
+    background: #83B3D3;
+    width: 400px;
+    height: 384px;
+}
+
+.advantages__numb {
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+}
+.services__item-white {
+    background: #FFFFFF;
+}
+.services__list {
+    background: rgba(131, 179, 211, 0.12);
+}
+.services__title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.about__list {
+    background: rgba(131, 179, 211, 0.12);
+}
+.about__title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.about__item-gray {
+    background: rgba(131, 179, 211, 0.2);
+}
+
+.search-data__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.search-data__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+}
+
 .contacts {
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
@@ -66,4 +151,41 @@ body {
     background-position: center;
     width: 100%;
     height: 411px;
+    text-align: center;
 }
+.contacts__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contacts__subtitle {
+    font-size: 22px;
+    line-height: 26px; 
+    color: #fff;
+}
+.contacts__button {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.footer__phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+
+/*     catalog     */
+
+.filters {
+    background-image: url(../img/bg-catalog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
