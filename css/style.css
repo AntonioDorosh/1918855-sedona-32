@@ -63,7 +63,7 @@ body {
     font-weight: 700;
 }
 .bg-container {
-    background-image: url(../img/bg.jpg);
+    background-image: url(/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
