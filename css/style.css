@@ -335,9 +335,6 @@ li {
 
 .contacts {
     margin: 108px 0 0 0;
-    background-image: url(../img/background.png);
-    background-position: center;
-    background-size: cover;
     width: 100%;
     height: 411px;
     text-align: center;
@@ -422,25 +419,70 @@ li {
 
 /*    CATALOG      */
 
+.navigation-link__btn {
+    padding: 10px 36px;
+}
+
+.info-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 625px;
+    padding: 30px 0;
+}
+
+.more-info__btn {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background: #83B3D3;
+    border-radius: 4px;  
+    padding: 15px 200px;
+}
+
 .filters {
     background-image: url(../img/bg-catalog.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 408px;
-    margin-bottom: 50px;
 }
 
 .filters__title {
     font-size: 60px;
     font-weight: 700;
+    line-height: 78px;
     color: #fff;
+    margin-left: 71px;
+    padding-top: 30px;
+}
+
+.filters__home {
+    display: flex;
+}
+
+.home-image {
+    margin-left: 71px;
+    margin-right: 11px;
+}
+
+.home-arrow {
+    margin-right: 10px;
 }
 
 .filters__subtitle {
-    font-size: 16px;
-    font-weight: 400;
     color: #fff;
+
+}
+
+.filters-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-left: 71px;
+    align-items: center;
 }
 
 .filters__type {
@@ -450,47 +492,342 @@ li {
 }
 
 .catalog-filters__form {
-    font-size: 18px;
-    font-weight: 400;
+    padding-top: 30px;
     color: #fff;
 }
 
-.filters-form__list {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;   
+.catalog-filters__list {
+    margin-bottom: 13px;
 }
+
+.filters-form__list {
+    padding-top: 30px;
+    margin-left: 60px;
+}
+
+.filters-form__menu {
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+.filters__type-second {
+    margin-left: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.range {
+    margin-left: 50px;
+}
+
+.range__fields {
+    display: flex;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+
+.header__button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.header__btn {
+    text-transform: uppercase;
+    color: #fff;
+    background: #83B3D3;
+    border-radius: 4px;
+    padding: 13px 17px;
+    width: 160px;
+    text-align: center;
+}
+
+.header__btn-clear {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+}
+
 
 .search-form__hotels {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 44px;
 }
 
-.search-form__container {
-    max-width: 1070px;
-    margin: 0 auto;
-    padding: 0 15px;
+.search__form-container {
+    display: flex;
+    align-items: center;
+}
+
+.sorting-type {
+    margin-left: auto;
+}
+
+.btn__about {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #756257;
+    border-radius: 4px;
+    padding: 10px 35px;
+    margin-right: 8px;
 }
 
 .search__title {
     font-size: 30px;
     font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 71px;
 }
 
-.hotel-sort {
+.select-control {
+    margin-right: 70px;
+}
+
+.btn-action__view {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-right: 8px;
+}
+
+.btn__favorite {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 11px 35px;
+    background: #83B3D3;
+    border-radius: 4px;
+}
+
+.select-control {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    padding: 13px 0;
+    width: 287px;
+}
+
+.header__btn {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: #83B3D3;
+    border-radius: 4px;
+}
+
+.pagination-container {
+    display: flex;
+    padding: 16px;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.pagination-link {
+    display: block;
+    box-sizing: border-box;
+    height: 55px;
+    padding: 14px 20px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.pagination-link-active {
+    display: block;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 55px;
+    padding: 14px 20px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #000;
+    background-color: #F2F2F2;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hotels-pages {
+    margin-left: auto;
+}
+
+.select-pages {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    padding: 13px 50px;
+}
+
+
+/* CATALOG section hotels */
+
+.hotel-list {
+	min-height: 454px;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
     margin-top: 42px;
 }
 
-.hotel-sort__item {
-    display: flex;
-    border-top: 1px solid #E5E5E5;
-    border-bottom: 1px solid #E5E5E5;
+.hotel {
+	display: flex;
+	min-height: 150px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    margin-bottom: 50px;
+    border-top: 1px solid gray;
 }
 
-.hotel-block__container {
-    max-width: 1070px;
-    height: 840px;
+.rating-image {
+    display: block;
     margin: 0 auto;
-    padding: 0 15px;
+    align-items: center;
+}
+
+.product-page {
+	width: 135px;
+	height: 90px;
+	margin-top: 30px;
+	margin-bottom: 0;
+	margin-left: 72px;
+	margin-right: 30px;
+}
+
+.content {
+	width: 277px;
+	min-height: 92px;
+	margin-top: 24px;
+	padding: 0;
+    padding-left: 35px;
+}
+
+.name-hotel {
+	margin-top: 0;
+	margin-bottom: 7px;
+	padding: 0;
+}
+
+.content-wrapper {
+	display: flex;
+}
+
+.content-info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+	margin-right: 6px;
+}
+
+.content-reserve {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.name-hotel a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.content-wrapper {
+	margin: 0;
+	padding-top: 0px;
+}
+
+.type,
+.price {
+	margin-top: 0;
+	margin-bottom: 14px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+	background-color: #ffffff;
+}
+
+.button-info {
+    color: #fff;
+    background: #756257;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.button-reserve {
+    text-transform: uppercase;
+    width: 160px;
+    font-weight: 700;
+    color: #fff;
+    background: #83B3D3;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.button-reserve-active {
+    color: #fff;
+    font-weight: 700;
+    background: #7DB54F;
+    border-radius: 4px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    width: 160px;
+    margin-top: 20px;
+}
+
+.rating {
+	margin-top: 30px;
+	margin-bottom: 0;
+	margin-right: 73px;
+	margin-left: auto;
+}
+
+.hotel-rating-value {
+	display: block;
+    text-align: center;
+	width: 140px;
+	margin-top: 59px;
+	margin-left: auto;
+	padding: 6px 4px 4px 15px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+/*     CONTACTS     */
+
+.contacts__catalog-title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contacts__catalog-subtitle {
+    margin-bottom: 26px;
+    font-size: 22px;
 }
 
